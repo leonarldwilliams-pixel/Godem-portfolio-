@@ -5,11 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Emmanuel Obuakor | Godem</title>
+<meta name="theme-color" content="#050609">
+<meta property="og:title" content="Godem — Emmanuel Obuakor">
+<meta property="og:description" content="Tech creator from Anambra, Nigeria. See what I have built: Orlena Hub, SwiftNet, a Telegram bot and more.">
 
 <meta name="description"
-content="The personal portfolio of Obuakor Chiemezuo Emmanuel — young tech creator, AI enthusiast and digital builder from Anambra, Nigeria.">
+content="The personal portfolio of Obuakor Chiemezuo Emmanuel — tech creator, AI enthusiast and digital builder from Anambra, Nigeria.">
 
 <style>
+
+/* ACCENT */
+:root{--a:#63ffe8;--ar:99,255,232}
 
 /* =========================================================
    RESET
@@ -129,7 +135,7 @@ nav {
 }
 
 .logo span {
-    color: #63ffe8;
+    color: var(--a);
 }
 
 .nav-links {
@@ -144,7 +150,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #63ffe8;
+    color: var(--a);
 }
 
 
@@ -180,13 +186,13 @@ nav {
 
     padding: 8px 13px;
 
-    border: 1px solid rgba(99,255,232,.18);
+    border: 1px solid rgba(var(--ar),.18);
 
     border-radius: 50px;
 
-    background: rgba(99,255,232,.04);
+    background: rgba(var(--ar),.04);
 
-    color: #63ffe8;
+    color: var(--a);
 
     font-family: monospace;
 
@@ -201,10 +207,10 @@ nav {
 
     border-radius: 50%;
 
-    background: #63ffe8;
+    background: var(--a);
 
     box-shadow:
-        0 0 12px #63ffe8;
+        0 0 12px var(--a);
 
     animation: pulse 1.5s infinite;
 }
@@ -234,7 +240,7 @@ nav {
 }
 
 .hero h1 span {
-    color: #63ffe8;
+    color: var(--a);
 }
 
 .hero-description {
@@ -254,7 +260,7 @@ nav {
 
     margin-top: 25px;
 
-    color: #63ffe8;
+    color: var(--a);
 
     font-family: monospace;
 
@@ -269,7 +275,7 @@ nav {
 
     margin-left: 3px;
 
-    background: #63ffe8;
+    background: var(--a);
 
     vertical-align: -2px;
 
@@ -319,7 +325,7 @@ nav {
 }
 
 .btn-primary {
-    background: #63ffe8;
+    background: var(--a);
 
     color: #04100e;
 }
@@ -329,7 +335,7 @@ nav {
 
     box-shadow:
         0 12px 35px
-        rgba(99,255,232,.18);
+        rgba(var(--ar),.18);
 }
 
 .btn-secondary {
@@ -344,9 +350,9 @@ nav {
 }
 
 .btn-secondary:hover {
-    border-color: #63ffe8;
+    border-color: var(--a);
 
-    color: #63ffe8;
+    color: var(--a);
 }
 
 
@@ -375,7 +381,7 @@ nav {
 
     border:
         1px solid
-        rgba(99,255,232,.18);
+        rgba(var(--ar),.18);
 
     background: #0b1015;
 
@@ -454,7 +460,7 @@ nav {
 
     margin-top: 4px;
 
-    color: #63ffe8;
+    color: var(--a);
 
     font-size: 10px;
 
@@ -476,7 +482,7 @@ section {
 }
 
 .section-tag {
-    color: #63ffe8;
+    color: var(--a);
 
     font-family: monospace;
 
@@ -612,7 +618,7 @@ section {
     transform: translateY(-5px);
 
     border-color:
-        rgba(99,255,232,.25);
+        rgba(var(--ar),.25);
 }
 
 .skill-icon {
@@ -676,7 +682,7 @@ section {
     transform: translateX(5px);
 
     border-color:
-        rgba(99,255,232,.25);
+        rgba(var(--ar),.25);
 }
 
 .project-number {
@@ -690,9 +696,9 @@ section {
     border-radius: 16px;
 
     background:
-        rgba(99,255,232,.06);
+        rgba(var(--ar),.06);
 
-    color: #63ffe8;
+    color: var(--a);
 
     font-family: monospace;
 
@@ -714,7 +720,7 @@ section {
 }
 
 .project-link {
-    color: #63ffe8;
+    color: var(--a);
 
     font-size: 11px;
 
@@ -735,7 +741,7 @@ section {
 
     border-left:
         1px solid
-        rgba(99,255,232,.2);
+        rgba(var(--ar),.2);
 }
 
 .timeline-item {
@@ -757,15 +763,15 @@ section {
 
     border-radius: 50%;
 
-    background: #63ffe8;
+    background: var(--a);
 
     box-shadow:
         0 0 15px
-        rgba(99,255,232,.5);
+        rgba(var(--ar),.5);
 }
 
 .timeline-item small {
-    color: #63ffe8;
+    color: var(--a);
 
     font-family: monospace;
 
@@ -808,14 +814,14 @@ section {
 
     border:
         1px solid
-        rgba(99,255,232,.15);
+        rgba(var(--ar),.15);
 
     border-radius: 28px;
 
     background:
         linear-gradient(
             135deg,
-            rgba(99,255,232,.05),
+            rgba(var(--ar),.05),
             rgba(100,70,255,.05)
         );
 }
@@ -893,7 +899,7 @@ footer {
 }
 
 footer strong {
-    color: #63ffe8;
+    color: var(--a);
 }
 
 
@@ -981,12 +987,108 @@ footer strong {
     }
 }
 
+
+/* =========================================================
+   UPGRADE: progress bar, glow, marquee, project cards, fun
+========================================================= */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--a),#8a6bff);z-index:200}
+#glow{position:fixed;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;pointer-events:none;z-index:-1;opacity:0;transition:opacity .4s;background:radial-gradient(circle,rgba(var(--ar),.10),transparent 65%)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.profile-card{transition:transform .15s ease-out;will-change:transform}
+.marquee{overflow:hidden;border-block:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);padding:14px 0}
+.marquee-track{display:flex;gap:44px;width:max-content;animation:slide 28s linear infinite;font-family:monospace;font-size:12px;color:#7f8999}
+.marquee-track b{color:var(--a);font-weight:400}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chip{padding:8px 15px;border-radius:50px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:#9aa4b4;font-size:12px;cursor:pointer;transition:.2s}
+.chip:hover{border-color:var(--a);color:var(--a)}
+.chip[aria-pressed="true"]{background:var(--a);color:#04100e;border-color:var(--a);font-weight:700}
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:26px}
+.pcard{display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(255,255,255,.07);border-radius:22px;background:rgba(255,255,255,.025);transition:transform .25s,border-color .25s,box-shadow .25s}
+.pcard:hover{transform:translateY(-6px);border-color:rgba(var(--ar),.3);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.pcard[hidden]{display:none}
+.pcard.wide{grid-column:1/-1}
+.shot{position:relative;height:190px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.06)}
+.pbody{display:flex;flex-direction:column;flex:1;padding:22px}
+.ptags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.ptags span{padding:4px 10px;border-radius:50px;background:rgba(var(--ar),.07);color:var(--a);font-family:monospace;font-size:10px}
+.pbody h3{font-size:19px;letter-spacing:-.5px;margin-bottom:8px}
+.pbody p{color:#8b95a5;font-size:13px;line-height:1.7}
+.plinks{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:18px}
+.plinks .btn{padding:10px 15px}
+.soon{display:inline-flex;align-items:center;padding:10px 15px;border-radius:13px;border:1px dashed rgba(255,255,255,.15);color:#788394;font-size:12px}
+/* Orlena mockup */
+.s-orlena{background:#FAF7F2;padding:20px;color:#1C1916;font-family:Georgia,serif}
+.s-orlena .t{font:800 17px Arial,sans-serif;letter-spacing:-.5px}
+.s-orlena .t i{color:#B4905A;font-style:normal}
+.s-orlena .q{margin-top:12px;height:30px;border:1px solid #E6DFD1;border-radius:9px;background:#fff;display:flex;align-items:center;padding:0 10px;font:11px Arial;color:#9a9185}
+.s-orlena .row{display:flex;gap:8px;margin-top:12px}
+.s-orlena .row div{flex:1;background:#fff;border:1px solid #E6DFD1;border-radius:10px;padding:10px;font:700 10px Arial}
+.s-orlena .row div::before{content:"";display:block;width:18px;height:18px;border-radius:5px;background:#C9A876;margin-bottom:8px}
+/* SwiftNet mockup */
+.s-swift{background:linear-gradient(135deg,#E8F0FF,#fff);padding:20px;font-family:Arial,sans-serif;color:#06257A;display:flex;gap:16px;align-items:center}
+.s-swift .l{flex:1}
+.s-swift .t{font-weight:800;font-size:17px}
+.s-swift .t i{color:#0B5FFF;font-style:normal}
+.s-swift .h{font-weight:800;font-size:15px;line-height:1.2;margin-top:14px}
+.s-swift .bars{display:flex;align-items:flex-end;gap:5px;height:34px;margin-top:14px}
+.s-swift .bars i{width:8px;border-radius:2px;background:#0B5FFF}
+.s-swift .f{width:42%;background:#fff;border:1px solid #D5E0F7;border-top:4px solid #0B5FFF;border-radius:10px;padding:12px}
+.s-swift .f u{display:block;height:9px;border-radius:5px;background:#E8F0FF;margin-bottom:8px}
+.s-swift .f em{display:block;height:20px;border-radius:6px;background:#0B5FFF;margin-top:12px}
+/* bot + tools + portfolio mockups */
+.s-bot{background:#0c1a22;padding:18px;display:flex;flex-direction:column;gap:8px;font:11px monospace}
+.s-bot span{max-width:70%;padding:8px 11px;border-radius:12px;background:#17313f;color:#bfeee8}
+.s-bot span.me{align-self:flex-end;background:var(--a);color:#04100e}
+.s-tools{background:#0b1015;padding:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.s-tools div{border:1px dashed rgba(var(--ar),.3);border-radius:10px;display:grid;place-items:center;color:var(--a);font:11px monospace}
+.s-me{background:#050609;display:grid;place-items:center;font:800 54px Arial;letter-spacing:-3px;color:var(--a)}
+/* fun */
+.pop{color:var(--a);font-family:monospace;font-weight:700;position:fixed;z-index:999;pointer-events:none;font-size:20px;animation:fly 1.3s ease-out forwards}
+@keyframes fly{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
+.logo{cursor:pointer;user-select:none}
+.skill-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:rgba(var(--ar),.07);border:1px solid rgba(var(--ar),.15);color:var(--a);transition:.25s}
+.skill:hover .skill-icon{background:var(--a);color:#04100e}
+.hint{margin-top:10px;color:#3f4958}
+@media(max-width:800px){.pgrid{grid-template-columns:1fr}.shot{height:170px}#glow{display:none}}
+@media(prefers-reduced-motion:reduce){.marquee-track,.status-dot,.cursor{animation:none}.pop{display:none}html{scroll-behavior:auto}}
+
+
+/* ===== ENTERTAINMENT PACK ===== */
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.dots{display:flex;gap:8px;align-items:center}
+.dots button{width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.2);cursor:pointer;padding:0;transition:transform .2s}
+.dots button:hover{transform:scale(1.3)}
+.dots button[aria-pressed="true"]{border-color:#fff}
+.nav-right{display:flex;align-items:center;gap:26px}
+.term-wrap{margin-top:30px;border:1px solid rgba(var(--ar),.25);border-radius:18px;overflow:hidden;background:rgba(5,8,12,.88);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.term-bar{display:flex;gap:7px;align-items:center;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.07);font:11px monospace;color:#566172}
+.term-bar i{width:10px;height:10px;border-radius:50%;background:#2a3340}
+.term-bar i:nth-child(1){background:#ff5f57}.term-bar i:nth-child(2){background:#febc2e}.term-bar i:nth-child(3){background:#28c840}
+.term-bar span{margin-left:8px}
+#tout{height:260px;overflow-y:auto;padding:16px;font:13px/1.7 monospace;color:#b7c3cf}
+#tout div{white-space:pre-wrap;word-break:break-word}
+#tout .cmd{color:var(--a)}
+#tout a{color:var(--a);text-decoration:underline}
+#tout .dim{color:#566172}
+.tin{display:flex;gap:8px;align-items:center;padding:12px 16px;border-top:1px solid rgba(255,255,255,.07);font:13px monospace;color:var(--a)}
+.tin input{flex:1;min-width:0;background:none;border:0;outline:0;color:#f4f7f8;font:inherit}
+.cmds{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pcard{position:relative}
+.pcard::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(var(--ar),.14),transparent 60%)}
+.pcard:hover::after{opacity:1}
+.hero h1 span{cursor:default}
+@media(max-width:800px){.nav-right{gap:0}#tout{height:230px}}
 </style>
 </head>
 
 
 <body>
 
+<div id="progress"></div>
+<div id="glow"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
 <div class="grid-bg"></div>
 
 
@@ -1000,7 +1102,7 @@ footer strong {
         GODEM<span>®</span>
     </div>
 
-    <div class="nav-links">
+    <div class="nav-right"><div class="nav-links">
 
         <a href="#about">About</a>
 
@@ -1012,6 +1114,14 @@ footer strong {
 
     </div>
 
+    <div class="dots" role="group" aria-label="Accent colour">
+        <button data-c="cyan" aria-label="Cyan" style="background:#63ffe8"></button>
+        <button data-c="violet" aria-label="Violet" style="background:#a98bff"></button>
+        <button data-c="lime" aria-label="Lime" style="background:#b6ff4d"></button>
+        <button data-c="orange" aria-label="Orange" style="background:#ff9a4d"></button>
+    </div>
+    </div>
+
 </nav>
 
 
@@ -1019,7 +1129,7 @@ footer strong {
      HERO
 ===================================================== -->
 
-<header class="hero">
+<header class="hero" id="top">
 
     <div>
 
@@ -1027,7 +1137,7 @@ footer strong {
 
             <span class="status-dot"></span>
 
-            BUILDING • LEARNING • CREATING
+            BUILDING • SHIPPING • CREATING
 
         </div>
 
@@ -1043,11 +1153,10 @@ footer strong {
 
         <p class="hero-description">
 
-            I'm a young tech creator from Anambra, Nigeria,
-            exploring web development, artificial intelligence,
-            digital tools and creative technology.
+            I'm a tech creator from Anambra, Nigeria, building websites,
+            Telegram bots and digital tools.
 
-            I enjoy turning ideas into things people can actually use.
+            I turn ideas into products people can actually use.
 
         </p>
 
@@ -1116,6 +1225,32 @@ footer strong {
 
 </header>
 
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="mq"></div></div>
+
+<section id="terminal" class="reveal">
+
+    <div class="section-tag">TRY IT</div>
+    <h2 class="section-title">Talk to my terminal.</h2>
+    <p class="section-subtitle">Type a command or tap one. There is a secret one too.</p>
+
+    <div class="term-wrap">
+        <div class="term-bar"><i></i><i></i><i></i><span>godem@portfolio ~</span></div>
+        <div id="tout" aria-live="polite"></div>
+        <form class="tin" id="tform" autocomplete="off"><span>$</span><input id="tin" aria-label="Terminal command" autocapitalize="off" spellcheck="false"></form>
+    </div>
+
+    <div class="cmds">
+        <button class="chip" data-x="help">help</button>
+        <button class="chip" data-x="about">about</button>
+        <button class="chip" data-x="projects">projects</button>
+        <button class="chip" data-x="skills">skills</button>
+        <button class="chip" data-x="theme">theme</button>
+        <button class="chip" data-x="matrix">matrix</button>
+        <button class="chip" data-x="contact">contact</button>
+    </div>
+
+</section>
+
 
 
 <!-- =====================================================
@@ -1134,8 +1269,8 @@ footer strong {
 
     <p class="section-subtitle">
 
-        I'm still at the beginning of my journey —
-        but I'm already building.
+        Building websites, bots and tools,
+        and shipping them for real.
 
     </p>
 
@@ -1160,13 +1295,11 @@ footer strong {
 
             <p>
 
-                I'm a young creator interested in technology,
-                artificial intelligence, web development,
-                automation and digital creativity.
-
-                I like experimenting with ideas,
-                learning how things work,
-                and turning what I learn into actual projects.
+                I build websites, Telegram bots and digital tools,
+                with a focus on clean interfaces that work.
+                I'm interested in technology, artificial intelligence,
+                automation and digital creativity, and I like turning
+                ideas into live projects.
 
             </p>
 
@@ -1174,11 +1307,9 @@ footer strong {
 
             <p>
 
-                My journey is still being written.
-
-                I'm currently developing my coding skills,
-                starting with the fundamentals and gradually
-                moving toward more advanced projects.
+                I work with HTML, CSS and JavaScript and ship my
+                projects on Vercel. I'm not done improving, and the
+                goal is bigger, more ambitious products.
 
             </p>
 
@@ -1222,10 +1353,10 @@ footer strong {
 
             <div class="info-row">
 
-                <span>Learning</span>
+                <span>Builds</span>
 
                 <span>
-                    Web Development
+                    Websites & Bots
                 </span>
 
             </div>
@@ -1260,143 +1391,49 @@ footer strong {
     </div>
 
     <h2 class="section-title">
-        Curious about a lot.
+        What I bring.
     </h2>
 
     <p class="section-subtitle">
-
-        I'm building a broad technical foundation
-        instead of locking myself into one skill too early.
-
+        A broad toolkit across web, bots, AI and design.
     </p>
-
 
     <div class="skills">
 
-
         <div class="skill">
-
-            <div class="skill-icon">
-                💻
-            </div>
-
-            <h3>
-                Web Development
-            </h3>
-
-            <p>
-
-                Learning HTML, CSS and JavaScript
-                while building practical websites
-                and interactive interfaces.
-
-            </p>
-
+            <div class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></div>
+            <h3>Web Development</h3>
+            <p>Building responsive websites and interactive interfaces with HTML, CSS and JavaScript, from landing pages to full tools.</p>
         </div>
 
-
         <div class="skill">
-
-            <div class="skill-icon">
-                🤖
-            </div>
-
-            <h3>
-                AI & Automation
-            </h3>
-
-            <p>
-
-                Exploring AI tools and automation
-                to create useful digital experiences
-                and speed up creative work.
-
-            </p>
-
+            <div class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg></div>
+            <h3>AI & Automation</h3>
+            <p>Using AI tools and automation to create useful digital experiences and speed up creative work.</p>
         </div>
 
-
         <div class="skill">
-
-            <div class="skill-icon">
-                🎨
-            </div>
-
-            <h3>
-                Digital Creativity
-            </h3>
-
-            <p>
-
-                Interested in visual design,
-                content creation, music technology
-                and creative digital projects.
-
-            </p>
-
+            <div class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <h3>Digital Creativity</h3>
+            <p>Visual design, content creation, music technology and creative digital projects.</p>
         </div>
 
-
         <div class="skill">
-
-            <div class="skill-icon">
-                🧠
-            </div>
-
-            <h3>
-                Problem Solving
-            </h3>
-
-            <p>
-
-                I enjoy taking confusing ideas,
-                breaking them into smaller pieces,
-                and figuring them out.
-
-            </p>
-
+            <div class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></div>
+            <h3>Problem Solving</h3>
+            <p>Taking confusing ideas, breaking them into smaller pieces and working them out.</p>
         </div>
 
-
         <div class="skill">
-
-            <div class="skill-icon">
-                ⚡
-            </div>
-
-            <h3>
-                Experimentation
-            </h3>
-
-            <p>
-
-                I learn by building — testing ideas,
-                breaking things, fixing them,
-                and improving the result.
-
-            </p>
-
+            <div class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg></div>
+            <h3>Experimentation</h3>
+            <p>I build by testing ideas, breaking things, fixing them and improving the result.</p>
         </div>
 
-
         <div class="skill">
-
-            <div class="skill-icon">
-                🚀
-            </div>
-
-            <h3>
-                Learning Fast
-            </h3>
-
-            <p>
-
-                Technology changes quickly,
-                so I'm focused on continuously
-                expanding what I can build.
-
-            </p>
-
+            <div class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+            <h3>Shipping</h3>
+            <p>Taking projects from idea to live link, then improving them after launch.</p>
         </div>
 
     </div>
@@ -1421,111 +1458,77 @@ footer strong {
 
     <p class="section-subtitle">
 
-        These projects represent the beginning of my
-        journey from experimenting to actually shipping.
+        A selection of what I have built and shipped.
 
     </p>
 
 
-    <div class="projects">
+    <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" data-f="web" aria-pressed="false">Websites</button>
+        <button class="chip" data-f="bot" aria-pressed="false">Bots</button>
+        <button class="chip" data-f="tool" aria-pressed="false">Tools</button>
+    </div>
 
+    <div class="pgrid">
 
-        <!-- PROJECT 1 -->
-
-        <div class="project">
-
-            <div class="project-number">
-                01
+        <article class="pcard wide" data-cat="web">
+            <div class="shot s-orlena" aria-hidden="true">
+                <div class="t">Orlena<i>Hub</i></div>
+                <div class="q">Search AI tools, prompts, sites…</div>
+                <div class="row"><div>AI Tools</div><div>Prompt Hub</div><div>Useful Sites</div></div>
             </div>
-
-            <div>
-
-                <h3>
-                    Nexa Earning Bot
-                </h3>
-
-                <p>
-
-                    My first Telegram bot project.
-                    Building it introduced me to bot logic,
-                    commands, interfaces and automation.
-
-                </p>
-
+            <div class="pbody">
+                <div class="ptags"><span>Website</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Live</span></div>
+                <h3>Orlena Hub</h3>
+                <p>One place for creative discovery. A hub that organizes useful AI tools, professional prompts and valuable websites, with search and categories, for creators, students, designers and developers. Includes a light and dark theme.</p>
+                <div class="plinks"><a class="btn btn-primary" href="https://orlena-hub.vercel.app/" target="_blank" rel="noopener">Visit live site →</a></div>
             </div>
+        </article>
 
-            <a
-                class="project-link"
-                href="https://t.me/NexaEarningbot?start=60005275"
-                target="_blank"
-            >
-
-                Open Project →
-
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 2 -->
-
-        <div class="project">
-
-            <div class="project-number">
-                02
+        <article class="pcard" data-cat="web">
+            <div class="shot s-swift" aria-hidden="true">
+                <div class="l"><div class="t">Swift<i>Net</i></div><div class="h">Win a free pocket router</div>
+                    <div class="bars"><i style="height:25%"></i><i style="height:45%"></i><i style="height:65%"></i><i style="height:82%"></i><i style="height:100%"></i></div></div>
+                <div class="f"><u></u><u></u><u></u><em></em></div>
             </div>
-
-            <div>
-
-                <h3>
-                    QuickTools
-                </h3>
-
-                <p>
-
-                    A collection of simple browser-based
-                    tools designed to make everyday tasks
-                    quicker and easier.
-
-                </p>
-
+            <div class="pbody">
+                <div class="ptags"><span>Website</span><span>Forms</span><span>JavaScript</span><span>Live</span></div>
+                <h3>SwiftNet Pocket Router Promo</h3>
+                <p>A promo website for a pocket router giveaway: entry form with validation, payment instructions, WhatsApp confirmation and a built-in random winner picker.</p>
+                <div class="plinks"><a class="btn btn-primary" href="https://swiftnet-pocket-router-promo.vercel.app/" target="_blank" rel="noopener">Visit live site →</a></div>
             </div>
+        </article>
 
-            <span class="project-link">
-                In development
-            </span>
-
-        </div>
-
-
-        <!-- PROJECT 3 -->
-
-        <div class="project">
-
-            <div class="project-number">
-                03
+        <article class="pcard" data-cat="bot">
+            <div class="shot s-bot" aria-hidden="true"><span>/start</span><span class="me">Welcome! Pick an option ↓</span><span>/help</span></div>
+            <div class="pbody">
+                <div class="ptags"><span>Telegram Bot</span><span>Automation</span></div>
+                <h3>Nexa Earning Bot</h3>
+                <p>My first Telegram bot project. Building it introduced me to bot logic, commands, interfaces and automation.</p>
+                <div class="plinks"><a class="btn btn-primary" href="https://t.me/NexaEarningbot?start=60005275" target="_blank" rel="noopener">Open in Telegram →</a></div>
             </div>
+        </article>
 
-            <div>
-
-                <h3>
-                    Personal Portfolio
-                </h3>
-
-                <p>
-
-                    This website — built from scratch
-                    while learning web development.
-
-                </p>
-
+        <article class="pcard" data-cat="tool">
+            <div class="shot s-tools" aria-hidden="true"><div>Aa</div><div>#</div><div>%</div><div>↔</div><div>QR</div><div>+</div></div>
+            <div class="pbody">
+                <div class="ptags"><span>Tools</span><span>Browser</span></div>
+                <h3>QuickTools</h3>
+                <p>A collection of simple browser-based tools designed to make everyday tasks quicker and easier.</p>
+                <div class="plinks"><span class="soon">In development</span></div>
             </div>
+        </article>
 
-            <span class="project-link">
-                You're here
-            </span>
-
-        </div>
+        <article class="pcard" data-cat="web">
+            <div class="shot s-me" aria-hidden="true">GODEM</div>
+            <div class="pbody">
+                <div class="ptags"><span>Website</span><span>You're here</span></div>
+                <h3>Personal Portfolio</h3>
+                <p>This website, built from scratch and still getting upgrades. Try clicking the logo five times.</p>
+                <div class="plinks"><a class="btn btn-secondary" href="#top">Back to top</a></div>
+            </div>
+        </article>
 
     </div>
 
@@ -1540,21 +1543,20 @@ footer strong {
 <section class="reveal">
 
     <div class="section-tag">
-        04 / MY JOURNEY
+        04 / JOURNEY
     </div>
 
     <h2 class="section-title">
-        Just getting started.
+        How I got here.
     </h2>
 
 
     <div class="timeline">
 
-
         <div class="timeline-item">
 
             <small>
-                THE BEGINNING
+                THE START
             </small>
 
             <h3>
@@ -1562,15 +1564,10 @@ footer strong {
             </h3>
 
             <p>
-
-                Began experimenting with AI tools,
-                digital creativity, automation and
-                technology projects.
-
+                Began with AI tools, digital creativity, automation and technology projects.
             </p>
 
         </div>
-
 
         <div class="timeline-item">
 
@@ -1583,36 +1580,42 @@ footer strong {
             </h3>
 
             <p>
-
-                Built and launched Nexa Earning Bot,
-                giving me practical experience with
-                bots and digital automation.
-
+                Built and launched Nexa Earning Bot, my first hands-on work with bots and digital automation.
             </p>
 
         </div>
-
 
         <div class="timeline-item">
 
             <small>
-                CURRENTLY
+                SHIPPED
             </small>
 
             <h3>
-                Learning to code properly
+                Put real websites online
             </h3>
 
             <p>
-
-                Moving beyond simply editing existing
-                projects and learning the fundamentals
-                of HTML, CSS and JavaScript.
-
+                Built and deployed Orlena Hub and the SwiftNet promo site to Vercel, so anyone can open them from a link.
             </p>
 
         </div>
 
+        <div class="timeline-item">
+
+            <small>
+                NOW
+            </small>
+
+            <h3>
+                Building and shipping
+            </h3>
+
+            <p>
+                Creating websites, bots and digital tools, and improving every release.
+            </p>
+
+        </div>
 
         <div class="timeline-item">
 
@@ -1625,12 +1628,7 @@ footer strong {
             </h3>
 
             <p>
-
-                The goal is simple:
-
-                understand technology deeply enough
-                to turn my own ideas into real products.
-
+                Turn my own ideas into real products.
             </p>
 
         </div>
@@ -1661,7 +1659,7 @@ footer strong {
         <p>
 
             I'm always interested in technology,
-            creative projects, learning opportunities
+            collaborations, creative projects
             and meeting people who are building cool things.
 
         </p>
@@ -1690,6 +1688,10 @@ footer strong {
 
             </a>
 
+            <a href="https://orlena-hub.vercel.app/" target="_blank" rel="noopener" class="btn btn-secondary">
+                Orlena Hub
+            </a>
+
         </div>
 
     </div>
@@ -1712,7 +1714,9 @@ footer strong {
 
     <br>
 
-    Built while learning. Built to keep growing.
+    Built with care. Always shipping.
+
+    <div class="hint">Psst… click the GODEM logo 5 times.</div>
 
 </footer>
 
@@ -1730,11 +1734,11 @@ footer strong {
 
 const typingMessages = [
 
-    "Young tech creator.",
+    "Tech creator.",
     "AI enthusiast.",
     "Digital builder.",
-    "Learning to code.",
-    "Turning ideas into projects."
+    "Shipping real projects.",
+    "Turning ideas into products."
 
 ];
 
@@ -1865,6 +1869,177 @@ revealElements.forEach(
 
     }
 );
+
+
+/* ===== UPGRADE SCRIPTS ===== */
+(function(){
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // scroll progress
+  var bar = document.getElementById("progress");
+  addEventListener("scroll", function(){
+    var h = document.documentElement;
+    bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + "%";
+  }, {passive:true});
+
+  // cursor glow (mouse only)
+  var glow = document.getElementById("glow");
+  if (matchMedia("(pointer: fine)").matches && !reduce) {
+    addEventListener("pointermove", function(e){
+      glow.style.opacity = 1;
+      glow.style.transform = "translate(" + e.clientX + "px," + e.clientY + "px)";
+    });
+  }
+
+  // profile tilt
+  var card = document.querySelector(".profile-card");
+  if (card && !reduce && matchMedia("(pointer: fine)").matches) {
+    card.addEventListener("pointermove", function(e){
+      var r = card.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      card.style.transform = "perspective(700px) rotateY(" + x*10 + "deg) rotateX(" + -y*10 + "deg)";
+    });
+    card.addEventListener("pointerleave", function(){ card.style.transform = ""; });
+  }
+
+  // marquee
+  var items = ["HTML","CSS","JavaScript","Telegram Bots","AI Tools","Vercel","GitHub","Automation","Web Design"];
+  var html = items.map(function(t){ return "<span><b>◆</b> " + t + "</span>"; }).join("");
+  document.getElementById("mq").innerHTML = html + html;
+
+  // project filters
+  var chips = document.querySelectorAll(".chip"), cards = document.querySelectorAll(".pcard");
+  chips.forEach(function(c){
+    c.addEventListener("click", function(){
+      chips.forEach(function(x){ x.setAttribute("aria-pressed", x === c); });
+      cards.forEach(function(p){ p.hidden = !(c.dataset.f === "all" || p.dataset.cat === c.dataset.f); });
+    });
+  });
+
+  // easter egg: click logo 5 times
+  var clicks = 0, timer;
+  document.querySelector(".logo").addEventListener("click", function(){
+    clicks++; clearTimeout(timer); timer = setTimeout(function(){ clicks = 0; }, 1200);
+    if (clicks < 5) return;
+    clicks = 0;
+    if (reduce) return;
+    var emo = ["</>","{ }","✦","◆","#","↗"];
+    for (var i = 0; i < 30; i++) {
+      var s = document.createElement("span");
+      s.className = "pop"; s.textContent = emo[i % emo.length];
+      s.style.left = "50%"; s.style.top = "40%";
+      s.style.setProperty("--x", (Math.random()*600-300) + "px");
+      s.style.setProperty("--y", (Math.random()*500-250) + "px");
+      s.style.setProperty("--r", (Math.random()*720-360) + "deg");
+      document.body.appendChild(s);
+      setTimeout(function(el){ el.remove(); }, 1400, s);
+    }
+  });
+})();
+
+
+/* ===== ENTERTAINMENT SCRIPTS ===== */
+(function(){
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var root = document.documentElement;
+  var themes = {cyan:["#63ffe8","99,255,232"],violet:["#a98bff","169,139,255"],lime:["#b6ff4d","182,255,77"],orange:["#ff9a4d","255,154,77"]};
+  var names = Object.keys(themes), cur = "cyan";
+  function setTheme(n){
+    if(!themes[n]) return false;
+    cur = n; root.style.setProperty("--a",themes[n][0]); root.style.setProperty("--ar",themes[n][1]);
+    document.querySelectorAll(".dots button").forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.c===n); });
+    try{ localStorage.setItem("godem-theme",n); }catch(e){}
+    readColor(); return true;
+  }
+  document.querySelectorAll(".dots button").forEach(function(b){ b.addEventListener("click",function(){ setTheme(b.dataset.c); }); });
+
+  /* canvas: particles that react to the pointer + matrix mode */
+  var cv = document.getElementById("fx"), cx = cv.getContext("2d"), W, H, pts = [], mouse = {x:-999,y:-999}, rgb = "99,255,232", matrixUntil = 0, cols = [];
+  function readColor(){ rgb = themes[cur][1]; }
+  function size(){
+    W = cv.width = innerWidth; H = cv.height = innerHeight;
+    var n = Math.min(80, Math.floor(W*H/18000)); pts = [];
+    for(var i=0;i<n;i++) pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4});
+    cols = []; for(var c=0;c<Math.ceil(W/16);c++) cols.push(Math.random()*H/16);
+  }
+  size(); addEventListener("resize",size);
+  addEventListener("pointermove",function(e){ mouse.x=e.clientX; mouse.y=e.clientY; });
+  addEventListener("pointerleave",function(){ mouse.x=mouse.y=-999; });
+  function frame(t){
+    if(t < matrixUntil){
+      cx.fillStyle="rgba(5,6,9,.14)"; cx.fillRect(0,0,W,H);
+      cx.fillStyle="rgb("+rgb+")"; cx.font="14px monospace";
+      cols.forEach(function(y,i){
+        cx.fillText("01{}<>/;#"[Math.floor(Math.random()*9)], i*16, y*16);
+        cols[i] = (y*16 > H && Math.random() > .975) ? 0 : y + 1;
+      });
+    } else {
+      cx.clearRect(0,0,W,H);
+      for(var i=0;i<pts.length;i++){
+        var a = pts[i], dx = a.x-mouse.x, dy = a.y-mouse.y, d = Math.hypot(dx,dy);
+        if(d < 140 && d > 0){ a.x += dx/d*1.6; a.y += dy/d*1.6; }
+        a.x += a.vx; a.y += a.vy;
+        if(a.x<0||a.x>W) a.vx*=-1; if(a.y<0||a.y>H) a.vy*=-1;
+        cx.fillStyle="rgba("+rgb+",.7)"; cx.beginPath(); cx.arc(a.x,a.y,1.6,0,6.3); cx.fill();
+        for(var j=i+1;j<pts.length;j++){
+          var b = pts[j], l = Math.hypot(a.x-b.x,a.y-b.y);
+          if(l < 120){ cx.strokeStyle="rgba("+rgb+","+(.16*(1-l/120))+")"; cx.beginPath(); cx.moveTo(a.x,a.y); cx.lineTo(b.x,b.y); cx.stroke(); }
+        }
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+  if(!reduce) requestAnimationFrame(frame);
+
+  /* scramble the name */
+  var nm = document.querySelector(".hero h1 span"), word = nm.textContent, busy = false;
+  function scramble(){
+    if(busy || reduce) return; busy = true; var n = 0, g = "01{}<>/#$%";
+    var id = setInterval(function(){
+      nm.textContent = word.split("").map(function(c,i){ return i < n ? c : g[Math.floor(Math.random()*g.length)]; }).join("");
+      if(++n > word.length){ clearInterval(id); nm.textContent = word; busy = false; }
+    }, 45);
+  }
+  nm.addEventListener("pointerenter",scramble); setTimeout(scramble,400);
+
+  /* card spotlight */
+  document.querySelectorAll(".pcard").forEach(function(c){
+    c.addEventListener("pointermove",function(e){ var r=c.getBoundingClientRect(); c.style.setProperty("--mx",(e.clientX-r.left)+"px"); c.style.setProperty("--my",(e.clientY-r.top)+"px"); });
+  });
+
+  /* terminal */
+  var out = document.getElementById("tout"), inp = document.getElementById("tin"), hist = [], hi = 0;
+  function line(txt,cls){ var d=document.createElement("div"); if(cls) d.className=cls; d.textContent=txt; out.appendChild(d); out.scrollTop=out.scrollHeight; return d; }
+  function link(label,href){ var d=document.createElement("div"), a=document.createElement("a"); a.textContent=label; a.href=href; a.target="_blank"; a.rel="noopener"; d.appendChild(a); out.appendChild(d); out.scrollTop=out.scrollHeight; }
+  var C = {
+    help:function(){ line("help  about  projects  skills  theme [cyan|violet|lime|orange]  matrix  contact  whoami  clear"); line("Hint: there is a hidden command. Try something with sudo.","dim"); },
+    about:function(){ line("Obuakor Chiemezuo Emmanuel (Godem). Tech creator from Anambra, Nigeria."); line("I build websites, Telegram bots and digital tools, and ship them."); },
+    projects:function(){ link("Orlena Hub  - AI tools, prompts and sites in one place","https://orlena-hub.vercel.app/"); link("SwiftNet Promo  - pocket router giveaway site","https://swiftnet-pocket-router-promo.vercel.app/"); link("Nexa Earning Bot  - Telegram bot","https://t.me/NexaEarningbot?start=60005275"); line("QuickTools  - in development","dim"); },
+    skills:function(){ line("Web development, AI and automation, digital creativity, problem solving, experimentation, shipping."); },
+    theme:function(a){ var n = a || names[(names.indexOf(cur)+1)%names.length]; if(setTheme(n)) line("Accent set to "+n+"."); else line("Unknown theme. Options: "+names.join(", ")+".","dim"); },
+    matrix:function(){ if(reduce){ line("Motion is reduced on this device, so matrix mode is off.","dim"); return; } matrixUntil = performance.now()+9000; line("Wake up, Neo… (9 seconds)"); },
+    contact:function(){ link("Message me on WhatsApp","https://wa.me/2348065095451"); },
+    whoami:function(){ line("godem"); },
+    clear:function(){ out.textContent=""; }
+  };
+  function run(raw){
+    var t = raw.trim(); if(!t) return;
+    var d = line("$ "+t,"cmd"); hist.push(t); hi = hist.length;
+    var p = t.toLowerCase().split(/\s+/);
+    if(p[0]==="sudo"){ line("Access granted. Let's build something."); link("Open WhatsApp","https://wa.me/2348065095451"); return; }
+    if(C[p[0]]) C[p[0]](p[1]); else line("command not found: "+p[0]+". Type help.","dim");
+  }
+  document.getElementById("tform").addEventListener("submit",function(e){ e.preventDefault(); run(inp.value); inp.value=""; });
+  inp.addEventListener("keydown",function(e){
+    if(e.key==="ArrowUp" && hist.length){ hi=Math.max(0,hi-1); inp.value=hist[hi]; e.preventDefault(); }
+    if(e.key==="ArrowDown"){ hi=Math.min(hist.length,hi+1); inp.value=hist[hi]||""; e.preventDefault(); }
+  });
+  document.querySelectorAll(".cmds .chip").forEach(function(c){ c.addEventListener("click",function(){ run(c.dataset.x); }); });
+  line("Welcome. Type help to see what I can do.","dim");
+
+  var saved; try{ saved = localStorage.getItem("godem-theme"); }catch(e){}
+  setTheme(themes[saved] ? saved : "cyan");
+})();
 
 </script>
 
